@@ -9,10 +9,10 @@ window.SITE_CONFIG = {
   // The name shown at the top of your site. A nickname or made-up forecaster
   // name is fine and recommended. Do not put your real name, email, photo,
   // or anything else that identifies you on this site.
-  forecaster_name: "",
+  forecaster_name: "Amanda",
 
   // One short line under the name (optional).
-  tagline: "",
+  tagline: "Fundamentals and polls blend",
 
   // A plain-language description of YOUR model, in your own words. Each line in
   // quotes is one paragraph, followed by a comma. Two or three short paragraphs:
@@ -25,8 +25,9 @@ window.SITE_CONFIG = {
   //   "A fundamentals-only model (no polls). Each race's predicted Democratic share combines the district's partisan lean, incumbency, and a forecast of the national House vote from presidential approval, gas prices, income and the midterm penalty.",
   //   "Uncertainty combines one national error shared by every race with a separate error for each race. Seat totals come from 10,000 simulated elections.",
   method: [
-    "",
-    ""
+     "My forecast predicts each race from how Democratic the district or state usually votes, whether an incumbent is running, and how much more one side is spending than the other. The House model is fit on 2018 to 2024 races and the Senate model on 2012 to 2024 races. In Senate races with polls, the forecast moves toward the polling average, more strongly when three or more pollsters have polled the race. Independents running on the Democratic side in red states are adjusted upwards based on how past independents beat the model.",
+    "For the national environment, I blend a fundamentals model based on the midterm penalty and presidential approval with a model of how well past generic ballot polls predicted the result. Each is weighted by how accurate it was in past elections. Thus, the polls get roughly 70 percent of the weight. The blend puts Democrats at 53.2 percent of the national House vote.",
+    "For uncertainty, I simulate the election 10,000 times. Each simulation adds a national error shared by every race, a state error shared by races in the same state, and a separate error for each race, with occasional big surprises allowed. Each win probability is the share of simulations the Democrat wins."
   ],
 
   // Your data files. Leave these alone unless you renamed your files.
